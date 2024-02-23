@@ -231,9 +231,10 @@
   231  clear
   232  ls
   233  wget https://raw.githubusercontent.com/jyotikahp/DemoRepoForCS131/main/Global%20YouTube%20Statistics.csv
-  234  ls
-  235  grep "United States" Global\ YouTube\ Statistics.csv > youtubers_us.csv 
-  236  grep "Music" Global\ YouTube\ Statistics.csv > music_category.csv
-  237  wc -lw music_category.csv > counts.txt
-  238  vi counts.txt
-  239  history > cmds.log
+  234  grep "United States" Global\ YouTube\ Statistics.csv > youtubers_us.txt
+  235  grep "Music" Global\ YouTube\ Statistics.csv > music_category.txt
+  236  gzip Global\ YouTube\ Statistics.csv 
+  237  wc -l music_category.txt > counts.txt
+  238  wc -w music_category.txt >> counts.txt
+  239  vi counts.txt 
+  240  history > cmds.log

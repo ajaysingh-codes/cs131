@@ -1,3 +1,2 @@
-Total number of lines with "Music" category: 238  
-Total count of words in "Music" category: 830
-music_category.csv
+Line counts of records in Music category is 238 in file - music_category.txt
+Word counts of records in Music category is 830 in file - music_category.txt
