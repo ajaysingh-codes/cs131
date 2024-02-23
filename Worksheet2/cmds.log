@@ -1,0 +1,239 @@
+    1  ls pwd
+    2  pwd
+    3  mkdir test
+    4  ls
+    5  rmdir test
+    6  ls
+    7  passwd
+    8  clear
+    9  wget www.github.com
+   10  ls
+   11  clear
+   12  ls
+   13  rm index.html
+   14  ls
+   15  clear
+   16  git config --global user.name "ajaysingh-codes"
+   17  git config --global user.email "ajay.singh@sjsu.edu"
+   18  cd ~/.ssh && ssh-keygen
+   19  mkdir ~/.ssh
+   20  ls
+   21  cd ~/.ssh && ssh-keygen
+   22  ls
+   23  cat id_rsa.pub
+   24  clear
+   25  cd ~/.ssh && ssh-keygen
+   26  cat id_rsa.pub
+   27  clear
+   28  git remote add origin git@github.com:ajaysingh-codes/sampleProject.git
+   29  cd ..
+   30  git remote add origin git@github.com:ajaysingh-codes/sampleProject.git
+   31  cd ..
+   32  ls
+   33  cd ajaysp24
+   34  git remote add origin git@github.com:ajaysingh-codes/sampleProject.git
+   35  ls
+   36  git config --global user.name "ajaysingh-codes"
+   37  git config --global user.email "ajay.singh@sjsu.edu"
+   38  git remote add origin git@github.com:ajaysingh-codes/sampleProject.git
+   39  git rev-parse --is-inside-work-tree
+   40  git init
+   41  git remote add origin git@github.com:ajaysingh-codes/sampleProject.git
+   42  git commit -m "My first commmit"
+   43  git push --set-upstream origin master
+   44  git push --set-upstream origin main
+   45  ls
+   46  git status
+   47  git add .
+   48  git commit -m "Initial commit"
+   49  git branch master
+   50  git push --set-upstream origin main
+   51  git push --set-upstream origin master
+   52  wget 
+   53  wget https://raw.githubusercontent.com/jyotikahp/DemoRepoForCS131/main/spotify-2023.csv
+   54  ls
+   55  head spotify-2023.csv 
+   56  clear
+   57  ls
+   58  less spotify-2023.csv 
+   59  clear
+   60  ls
+   61  vi spotify-2023.csv
+   62  vi spotify-2023.csv 
+   63  head spotify-2023.csv 
+   64  sort spotify-2023.csv
+   65  head spotify-2023.csv
+   66  clear
+   67  vi test.txt
+   68  cat test.txt
+   69  sort test.txt 
+   70  cat test.txt 
+   71  ls
+   72  echo "hello" > test.txt
+   73  cat test.txt 
+   74  echo "hello 3" >> test.txt 
+   75  cat test.txt 
+   76  clear
+   77  clear
+   78  ls
+   79  clear
+   80  ls
+   81  ls
+   82  vi spotify-2023.csv 
+   83  whoami
+   84  who
+   85  clear
+   86  echo "Hello world"
+   87  ls
+   88  clear
+   89  ls
+   90  echo 'I am awesome'
+   91  whoami 
+   92  exit
+   93  clear
+   94  echo "Unix rocks"
+   95  echo -n "Unix rocks"
+   96  ls
+   97  ls -l -a -h
+   98  ls -lah
+   99  clear
+  100  banner -w 50 "Unix rocks"
+  101  clear
+  102  echo $SHELL
+  103  echo $0
+  104  zsh
+  105  clear
+  106  nano
+  107  clear
+  108  pwd
+  109  clear
+  110  ls -l
+  111  ls -lh
+  112  ls -lha
+  113  cd ..
+  114  ls
+  115  cd -
+  116  ls
+  117  clear
+  118  ls
+  119  ls -lha
+  120  clear
+  121  nano
+  122  ls
+  123  cat first_file.txt 
+  124  nano first_file.txt 
+  125  nano new_file.txt
+  126  ls
+  127  clear
+  128  ls
+  129  wget www.github.com
+  130  git clone git@github.com:ajaysingh-codes/cs131.git
+  131  ls
+  132  git config --global user.email "ajay.singh@sjsu.edu"
+  133  git config --global user.name "ajaysingh-codes"
+  134  git clone https://github.com/ajaysingh-codes/cs131.git
+  135  cd cs131
+  136  mkdir Worksheet1
+  137  ls
+  138  cd Worksheet1
+  139  touch .gitkeep
+  140  cd ..
+  141  git add Worksheet1/.gitkeep
+  142  git commit -m "Added Worksheet1 directory"
+  143  git push
+  144  clear
+  145  ls
+  146  git push
+  147  remote: Support for password authentication was removed on August 13, 2021.
+  148  remote: Please see https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+  149  fatal: Authentication failed for 'https://github.com/ajaysingh-codes/cs131.git/'
+  150  clear
+  151  ls
+  152  rm first_file.txt
+  153  ls
+  154  rm new_file.txt
+  155  ls
+  156  clear
+  157  ls
+  158  rm test.txt
+  159  clear
+  160  ls
+  161  ls -lat
+  162  cd .ssh/
+  163  ls
+  164  cd ..
+  165  rmdir .ssh/
+  166  cd .ssh/
+  167  ls
+  168  rw cat id_rsa.pub
+  169  rm cat id_rsa.pub
+  170  rm cat\ id_rsa.pub
+  171  ls
+  172  rm cat\ id_rsa.pub.pub 
+  173  ls
+  174  rm id_rsa
+  175  ls
+  176  rm known_hosts
+  177  ls
+  178  clear
+  179  cd ..
+  180  ls
+  181  cd -lat
+  182  clear
+  183  ls -lat
+  184  git config --global user.email "ajay.singh@sjsu.edu"
+  185  git config --global user.name "ajaysingh-codes"
+  186  cd ~/.ssh && ssh-keygen
+  187  ls
+  188  cat id_rsa.pub
+  189  cd ..
+  190  clear
+  191  wget www.github.com
+  192  git clone git@github.com:ajaysingh-codes/cs131.git
+  193  ls
+  194  rm cs131/
+  195  rmdir cs131/
+  196  cd cs131
+  197  ls
+  198  rm Worksheet1/
+  199  rmdir Worksheet1/
+  200  cd Worksheet1/
+  201  ls
+  202  cd ..
+  203  rmdir Worksheet1/
+  204  cd ..
+  205  clear
+  206  ls
+  207  rm -r cs131/
+  208  ls
+  209  rm index.html
+  210  ls
+  211  rm index.html.1 
+  212  ls
+  213  clear
+  214  git clone git@github.com:ajaysingh-codes/cs131.git
+  215  ls
+  216  cd 131
+  217  cd cs131/
+  218  mkdir Worksheet1
+  219  cd ..
+  220  ls
+  221  clear
+  222  wget www.github.com
+  223  ls
+  224  cd cs131/
+  225  history > Worksheet1/cmds.log
+  226  cd Worksheet1/
+  227  git add cmds.log
+  228  git commit -m "Add command history log"
+  229  git push origin main
+  230  cd ..
+  231  clear
+  232  ls
+  233  wget https://raw.githubusercontent.com/jyotikahp/DemoRepoForCS131/main/Global%20YouTube%20Statistics.csv
+  234  ls
+  235  grep "United States" Global\ YouTube\ Statistics.csv > youtubers_us.csv 
+  236  grep "Music" Global\ YouTube\ Statistics.csv > music_category.csv
+  237  wc -lw music_category.csv > counts.txt
+  238  vi counts.txt
+  239  history > cmds.log
