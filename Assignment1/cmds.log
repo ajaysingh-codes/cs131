@@ -1,0 +1,41 @@
+Script started on 2024-02-28 17:27:38-05:00
+
+# 1: Create Assignment1 directory and enter it
+bash-4.4$ mkKdir -p cs131/Assignment1
+bash-4.4$ cd cs131/Assignment1/
+
+# 2,3: Display current shell and home directory
+bash-4.4$ echo $SHELL
+bash-4.4$ echo $HOME
+
+# 3: Show UID and group info
+bash-4.4$ id
+
+# 5: Create new directory 'myDir' and remove write permissions
+bash-4.4$ mkdir myDir
+bash-4.4$ chmod u-w myDir
+bash-4.4$ cd myDir/
+bash-4.4$ ls
+bash-4.4$ ls -l
+bash-4.4$ touch myFile.txt
+bash-4.4$ cd ..
+
+# 6: Create two new directories 'myDir2' and 'myDir3'
+bash-4.4$ mkdir myDir2
+bash-4.4$ mkdir myDir3
+
+# 7: Create 'myFile.txt' in myDir2 and then move to myDir3 using mv command
+bash-4.4$ touch myDir2/myFile.txt
+bash-4.4$ mv myDir2/myFile.txt myDir3/
+
+# 8: Check total amount of RAM in mebibytes
+bash-4.4$ free -m
+
+# 9: Identify the operating system version
+bash-4.4$ cat /etc/os-release
+
+# 10: Check permissions for OS version file 
+bash-4.4$ ls -l /etc/os-release
+
+exit
+Script done on 2024-02-28 17:42:10-05:00
