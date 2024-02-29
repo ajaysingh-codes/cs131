@@ -1,0 +1,118 @@
+Script started on 2024-02-28 17:27:38-05:00
+bash-4.4$ mkf[Kdir -p cs131/Assignment1
+bash-4.4$ cd cd[Ks131/Assignment1/
+bash-4.4$ echo $SHELL
+/bin/bash
+bash-4.4$ echo $HOME
+/mnt/scratch/SP24_CS131_Jyotika/ajaysp24
+bash-4.4$ id
+uid=1230(ajaysp24) gid=1230(ajaysp24) groups=1230(ajaysp24),78(S78)
+bash-4.4$ mkdir myDir
+bash-4.4$ chmod u-w myDir
+bash-4.4$ cd mk[KyDir/
+bash-4.4$ ls
+bash-4.4$ ls -l
+total 0
+bash-4.4$ toucm[Kg[Kh myFile.txt
+touch: cannot touch 'myFile.txt': Permission denied
+bash-4.4$ cd ..
+bash-4.4$ mkdr[Kir myDir2
+bash-4.4$ mkdir myDir2[K3
+bash-4.4$ touch myDir2/myFile.txt
+bash-4.4$ mv myDir2/myFile.txt myDir3/
+bash-4.4$ man free
+[?1049h[22;0;0t[?1h=FREE(1)                       User Commands                      FREE(1)[m
+[m
+[1mNAME[0m[m
+       free - Display amount of free and used memory in the system[m
+[m
+[1mSYNOPSIS[0m[m
+       [1mfree [22m[[4moptions[24m][m
+[m
+[1mDESCRIPTION[0m[m
+       [1mfree [22mdisplays the total amount of free and used physical and swap[m
+       memory in the system, as well as the buffers and caches  used  by[m
+       the kernel. The information is gathered by parsing /proc/meminfo.[m
+       The displayed columns are:[m
+[m
+       [1mtotal  [22mTotal  installed  memory  (MemTotal   and   SwapTotal   in[m
+              /proc/meminfo)[m
+[m
+       [1mused   [22mUsed memory (calculated as [1mtotal [22m- [1mfree [22m- [1mbuffers [22m- [1mcache[22m)[m
+[m
+       [1mfree   [22mUnused memory (MemFree and SwapFree in /proc/meminfo)[m
+[m
+       [1mshared [22mMemory used (mostly) by tmpfs (Shmem in /proc/meminfo)[m
+[m
+       [1mbuffers[0m[m
+              Memory used by kernel buffers (Buffers in /proc/meminfo)[m
+[m
+       [1mcache  [22mMemory  used  by the page cache and slabs (Cached and SRe‐[m
+              claimable in /proc/meminfo)[m
+[m
+       [1mbuff/cache[0m[m
+              Sum of [1mbuffers [22mand [1mcache[0m[m
+[m
+       [1mavailable[0m[m
+              Estimation of how much memory is  available  for  starting[m
+              new  applications,  without swapping. Unlike the data pro‐[m
+              vided by the [1mcache [22mor [1mfree [22mfields, this field  takes  into[m
+              account  page cache and also that not all reclaimable mem‐[m
+              ory slabs will be reclaimed due  to  items  being  in  use[m
+              (MemAvailable in /proc/meminfo, available on kernels 3.14,[m
+              emulated on kernels 2.6.27+, otherwise the same as [1mfree[22m)[m
+[m
+[1mOPTIONS[0m[m
+       [1m-b[22m, [1m--bytes[0m[m
+              Display the amount of memory in bytes.[m
+[m
+       [1m-k[22m, [1m--kibi[0m[m
+              Display the amount of memory in kibibytes.   This  is  the[m
+[7m Manual page free(1) line 1 (press h for help or q to quit)[27m[K[K[?1l>[?1049l[23;0;0tbash-4.4$ free -m
+              total        used        free      shared  buff/cache   available
+Mem:          71367       32351       19848        3601       19167       33956
+Swap:          4119           0        4119
+bash-4.4$ cat /etc/os-release 
+NAME="Red Hat Enterprise Linux"
+VERSION="8.6 (Ootpa)"
+ID="rhel"
+ID_LIKE="fedora"
+VERSION_ID="8.6"
+PLATFORM_ID="platform:el8"
+PRETTY_NAME="Red Hat Enterprise Linux 8.6 (Ootpa)"
+ANSI_COLOR="0;31"
+CPE_NAME="cpe:/o:redhat:enterprise_linux:8::baseos"
+HOME_URL="https://www.redhat.com/"
+DOCUMENTATION_URL="https://access.redhat.com/documentation/red_hat_enterprise_linux/8/"
+BUG_REPORT_URL="https://bugzilla.redhat.com/"
+
+REDHAT_BUGZILLA_PRODUCT="Red Hat Enterprise Linux 8"
+REDHAT_BUGZILLA_PRODUCT_VERSION=8.6
+REDHAT_SUPPORT_PRODUCT="Red Hat Enterprise Linux"
+REDHAT_SUPPORT_PRODUCT_VERSION="8.6"
+bash-4.4$ ls -l /etc/od[Ks-release [K
+lrwxrwxrwx. 1 root root 22 Apr  6  2022 /etc/os-release -> ..//usr/lib/os-release
+bash-4.4$ cat /etc/*release
+NAME="Red Hat Enterprise Linux"
+VERSION="8.6 (Ootpa)"
+ID="rhel"
+ID_LIKE="fedora"
+VERSION_ID="8.6"
+PLATFORM_ID="platform:el8"
+PRETTY_NAME="Red Hat Enterprise Linux 8.6 (Ootpa)"
+ANSI_COLOR="0;31"
+CPE_NAME="cpe:/o:redhat:enterprise_linux:8::baseos"
+HOME_URL="https://www.redhat.com/"
+DOCUMENTATION_URL="https://access.redhat.com/documentation/red_hat_enterprise_linux/8/"
+BUG_REPORT_URL="https://bugzilla.redhat.com/"
+
+REDHAT_BUGZILLA_PRODUCT="Red Hat Enterprise Linux 8"
+REDHAT_BUGZILLA_PRODUCT_VERSION=8.6
+REDHAT_SUPPORT_PRODUCT="Red Hat Enterprise Linux"
+REDHAT_SUPPORT_PRODUCT_VERSION="8.6"
+Red Hat Enterprise Linux release 8.6 (Ootpa)
+Red Hat Enterprise Linux release 8.6 (Ootpa)
+bash-4.4$ exit
+exit
+
+Script done on 2024-02-28 17:42:10-05:00
