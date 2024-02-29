@@ -1,17 +1,25 @@
 Script started on 2024-02-28 17:27:38-05:00
 
 # 1: Create Assignment1 directory and enter it
+# I used mkdir and cd commands to create the directory and then change it.
 bash-4.4$ mkdir -p cs131/Assignment1
 bash-4.4$ cd cs131/Assignment1/
 
 # 2,3: Display current shell and home directory
+# To display the current shell and home directory, I used the echo command
+# using the global variables SHELL and HOME.
 bash-4.4$ echo $SHELL
 bash-4.4$ echo $HOME
 
 # 3: Show UID and group info
+# My UID is 1230 and I belong to groups 1230, 78
+# and I used id command to find this info.
 bash-4.4$ id
 
-# 5: Create new directory 'myDir' and remove write permissions
+# 5: Create new directory 'myDir' and remove write permissions using chmod
+# From 'myDir', I am able to cd in the directory. I can also ls and ls -l 
+# that results in "total 0" meaning directory is empty. However, when I tried
+# to create a new file "myFile.txt", I was unable to do so. 
 bash-4.4$ mkdir myDir
 bash-4.4$ chmod u-w myDir
 bash-4.4$ cd myDir/
@@ -32,9 +40,12 @@ bash-4.4$ mv myDir2/myFile.txt myDir3/
 bash-4.4$ free -m
 
 # 9: Identify the operating system version
+# The OS version is 8.6 (Ootpa) and the file os-release under /etc/
+# contains this information
 bash-4.4$ cat /etc/os-release
 
-# 10: Check permissions for OS version file 
+# 10: Check permissions for OS version file
+# All users (user, group and others) have read, write and execute permissions. 
 bash-4.4$ ls -l /etc/os-release
 
 exit
