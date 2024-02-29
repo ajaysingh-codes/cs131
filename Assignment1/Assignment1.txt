@@ -1,6 +1,6 @@
 Script started on 2024-02-28 17:27:38-05:00
-bash-4.4$ mkKdir -p cs131/Assignment1
-bash-4.4$ cd cKs131/Assignment1/
+bash-4.4$ mkdir -p cs131/Assignment1
+bash-4.4$ cd cs131/Assignment1/
 bash-4.4$ echo $SHELL
 
 Output from task 2: Display current shell
@@ -11,9 +11,10 @@ Output from task 3: Display home directory
 
 Output from task 4: Display UID and group info
 uid=1230(ajaysp24) gid=1230(ajaysp24) groups=1230(ajaysp24),78(S78)
+
 bash-4.4$ mkdir myDir
 
-Output from task 5: "Permission denied" when creating files
+Output from task 5: "Permission denied" when creating files in "myDir"
 bash-4.4$ chmod u-w myDir
 bash-4.4$ cd myDir/
 bash-4.4$ ls
@@ -23,8 +24,8 @@ bash-4.4$ touch myFile.txt
 touch: cannot touch 'myFile.txt': Permission denied
 
 Output from task 6: 
-bash-4.4$ mkdKir myDir2
-bash-4.4$ mkdir myDirK3
+bash-4.4$ mkdir myDir2
+bash-4.4$ mkdir myDir3
 
 Output from task 7:
 bash-4.4$ touch myDir2/myFile.txt

@@ -1,7 +1,7 @@
 Script started on 2024-02-28 17:27:38-05:00
 
 # 1: Create Assignment1 directory and enter it
-bash-4.4$ mkKdir -p cs131/Assignment1
+bash-4.4$ mkdir -p cs131/Assignment1
 bash-4.4$ cd cs131/Assignment1/
 
 # 2,3: Display current shell and home directory
