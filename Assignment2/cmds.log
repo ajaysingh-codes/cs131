@@ -10,9 +10,9 @@ cat two.txt
 
 Question 2:
 
-Command used:
-cut -d',' -f20,21 Global\ YouTube\ Statistics.csv > extracted_data.csv
-sort extracted_data.csv | uniq -c | sort -nr | head -3
+Commands used:
+1. cut -d',' -f20,21 Global\ YouTube\ Statistics.csv > extracted_data.csv
+2. sort extracted_data.csv | uniq -c | sort -nr | head -3
 Output: 
      15 2006,Mar
      13 2014,Jul
@@ -25,17 +25,21 @@ Command Used: ps -ef | grep ajaysp24
 Question 4:
 First output after executing 'vi file.txt' in the first terminal. 
 Command used: ps -ef | grep ajaysp24
-After executing the vi file.txt in the first terminal, it starts the vim process with file 'file.txt' The Process ID (PID) for the vim is 3954618.
+After executing the vi file.txt in the first terminal, it starts the vim process with file
+'file.txt' The Process ID (PID) for the vim is 3954618.
 
 Second output after quitting vi editor using the exit option.
 Command used: ps -ef | grep ajaysp24
-After quitting the vi editor in the first terminal closes the vim process and removes it fromthe list of active processes.
+After quitting the vi editor in the first terminal, the vim process is removed from the list of active processes.
 
 Question 5
-The init process is the first process to get started by the Kernel and has Process ID (PID):1Command Used: ps aux | grep systemd | head -1
+The init process is the first process to get started by the Kernel and has Process ID (PID): 1
+Command Used: ps aux | grep systemd | head -1
 
 Question 6
 
-ps aux : This command is used to display information about the running processes. The option 'a' tells ps to display processes for all users, the option 'u' gives detailed user-oriented information including CPU and memory usage, Process ID (PID), Parent Process ID (PPID),  and the 'x' option includes processes not attached to the terminal.
+ps aux : This command is used to display information about the running processes. The option 'a' tells ps to display processes for all users, 
+the option 'u' gives detailed user-oriented information including CPU and memory usage, Process ID (PID), Parent Process ID (PPID),
+and the 'x' option includes processes not attached to the terminal.
  
 Script done on 2024-03-20 20:10:22-04:00

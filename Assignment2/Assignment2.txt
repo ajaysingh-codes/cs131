@@ -3,11 +3,12 @@ Script started on 2024-03-20 19:56:20-04:00
 Problem 1
 Part a:
 Command used: find /etc -type f > one.txt 2> two.txt
-This command initiates a search starting from '\etc' directory looking for filetype files. The first redirection redirects the standard output of this command to the file named 'one.txt' and the second redirection redirects the standard error to the file named 'two.txt'.
+This command initiates a search starting from '\etc' directory looking for filetype files. The first redirection redirects the standard output
+of this command to the file named 'one.txt' and the second redirection redirects the standard error to the file named 'two.txt'.
 
 Part b:
 cat one.txt
-The first cat shows a list of file paths that were found by the 'find' command within '/etc' and its subdirectories. A subset of the output is shown below: 
+The first cat command shows a list of file paths that were found by the 'find' command within '/etc' and its subdirectories. A subset of the output is shown below: 
 
 /etc/fstab
 /etc/crypttab
@@ -29,7 +30,7 @@ The first cat shows a list of file paths that were found by the 'find' command w
 
 Output from part b: 
 cat two.txt
-The second cat command displays the list of all the files within the /etc directory and its subdirectories  with permission errors.
+The second cat command displays the list of all the files within the /etc directory and its subdirectories with permission errors.
 
 find: ‘/etc/pki/rsyslog’: Permission denied
 find: ‘/etc/lvm/archive’: Permission denied
@@ -59,12 +60,13 @@ Explanation:
 2. July,2014 with 13 channels
 3. August,2014 with 12 channels
 
-The first command I used was cut to extract columns 20(created_year) and 21(created_month) respectively. The options I used were '-d' for specifying the delimiter and '-f20,21' which stands for fields 20 and 21.
+The first command I used was cut to extract columns 20(created_year) and 21(created_month) respectively. The options I used were '-d' for specifying the delimiter
+and '-f20,21' which stands for fields 20 and 21.
 
-The second command 'sort' sorted this extracted data in file extracted_data.csv and the uniq command with option '-c' counts occurrences of each unique line, adding it to the beginning
-of line. 
+The second command 'sort' sorted this extracted data in file extracted_data.csv and the uniq command with option '-c' counts occurrences of each unique line, 
+adding it to the beginning of line. 
 
-The sort command '-n'  sorts based on the numerical count value and the '-r' option reverses the result, from highest to lowest. Finally, the 'head -3' outputs the top 3 lines.    
+The sort command '-n' sorts based on the numerical count value and the '-r' option reverses the result, from highest to lowest. Finally, the 'head -3' outputs the top 3 results.
 
 Question 3:
 Command to output all processes owned by me
@@ -103,7 +105,7 @@ ajaysp24 3954732 3951495  0 20:05 pts/17   00:00:00 grep ajaysp24
 
 Second output after quitting vi editor using the exit option.
 Command used: ps -ef | grep ajaysp24
-After quitting the vi editor in the first terminal closes the vim process and removes it fromthe list of active processes.
+After quitting the vi editor in the first terminal, the vim process is removed from the list of active processes.
 
 root	 3950479    3773  0 19:54 ?	   00:00:00 sshd: ajaysp24 [priv]
 ajaysp24 3950501       1  0 19:54 ?	   00:00:00 /usr/lib/systemd/systemd --user
@@ -125,6 +127,8 @@ root	       1  0.6  0.0 178624 18432 ?	 Ss    2023 850:42 /usr/lib/systemd/syste
 
 Question 6
 
-ps aux : This command is used to display information about the running processes. The option 'a' tells ps to display processes for all users, the option 'u' gives detailed user-oriented information including CPU and memory usage, Process ID (PID), Parent Process ID (PPID),  and the 'x' option includes processes not attached to the terminal.
+ps aux : This command is used to display information about the running processes. The option 'a' tells ps to display processes for all users,
+the option 'u' gives detailed user-oriented information including CPU and memory usage, Process ID (PID), Parent Process ID (PPID), 
+and the 'x' option includes processes not attached to the terminal.
  
 Script done on 2024-03-20 20:10:22-04:00
