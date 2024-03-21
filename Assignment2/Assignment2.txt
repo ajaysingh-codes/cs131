@@ -1,0 +1,130 @@
+Script started on 2024-03-20 19:56:20-04:00
+
+Problem 1
+Part a:
+Command used: find /etc -type f > one.txt 2> two.txt
+This command initiates a search starting from '\etc' directory looking for filetype files. The first redirection redirects the standard output of this command to the file named 'one.txt' and the second redirection redirects the standard error to the file named 'two.txt'.
+
+Part b:
+cat one.txt
+The first cat shows a list of file paths that were found by the 'find' command within '/etc' and its subdirectories. A subset of the output is shown below: 
+
+/etc/fstab
+/etc/crypttab
+/etc/multipath.conf
+/etc/multipath/wwids
+/etc/multipath/bindings
+/etc/resolv.conf
+/etc/dnf/modules.d/container-tools.module
+/etc/dnf/modules.d/perl.module
+/etc/dnf/modules.d/perl-IO-Socket-SSL.module
+/etc/dnf/modules.d/perl-libwww-perl.module
+/etc/dnf/modules.d/python39.module
+/etc/dnf/modules.d/javapackages-runtime.module
+/etc/dnf/dnf.conf
+/etc/dnf/plugins/copr.conf
+/etc/dnf/plugins/debuginfo-install.conf
+/etc/dnf/plugins/kpatch.conf
+
+
+Output from part b: 
+cat two.txt
+The second cat command displays the list of all the files within the /etc directory and its subdirectories  with permission errors.
+
+find: ‘/etc/pki/rsyslog’: Permission denied
+find: ‘/etc/lvm/archive’: Permission denied
+find: ‘/etc/lvm/backup’: Permission denied
+find: ‘/etc/lvm/cache’: Permission denied
+find: ‘/etc/sssd’: Permission denied
+find: ‘/etc/polkit-1/rules.d’: Permission denied
+find: ‘/etc/polkit-1/localauthority’: Permission denied
+find: ‘/etc/grub.d’: Permission denied
+find: ‘/etc/nftables’: Permission denied
+find: ‘/etc/audit’: Permission denied
+find: ‘/etc/sudoers.d’: Permission denied
+find: ‘/etc/firewalld’: Permission denied
+
+Question 2:
+
+Command used:
+cut -d',' -f20,21 Global\ YouTube\ Statistics.csv > extracted_data.csv
+sort extracted_data.csv | uniq -c | sort -nr | head -3
+Output: 
+     15 2006,Mar
+     13 2014,Jul
+     12 2014,Aug
+
+Explanation:
+1. March,2006 with 15 channels
+2. July,2014 with 13 channels
+3. August,2014 with 12 channels
+
+The first command I used was cut to extract columns 20(created_year) and 21(created_month) respectively. The options I used were '-d' for specifying the delimiter and '-f20,21' which stands for fields 20 and 21.
+
+The second command 'sort' sorted this extracted data in file extracted_data.csv and the uniq command with option '-c' counts occurrences of each unique line, adding it to the beginning
+of line. 
+
+The sort command '-n'  sorts based on the numerical count value and the '-r' option reverses the result, from highest to lowest. Finally, the 'head -3' outputs the top 3 lines.    
+
+Question 3:
+Command to output all processes owned by me
+Command Used: ps -ef | grep ajaysp24
+I used ps command to display the current processes and the grep command to show only the processes containing my username 'ajaysp24'. 
+
+
+root	 3950479    3773  0 19:54 ?	   00:00:00 sshd: ajaysp24 [priv]
+ajaysp24 3950501       1  0 19:54 ?	   00:00:00 /usr/lib/systemd/systemd --user
+ajaysp24 3950503 3950501  0 19:54 ?	   00:00:00 (sd-pam)
+ajaysp24 3950509 3950479  0 19:54 ?	   00:00:00 sshd: ajaysp24@pts/8
+ajaysp24 3950510 3950509  0 19:54 pts/8	   00:00:00 -bash
+ajaysp24 3951493 3950510  0 19:56 pts/8	   00:00:00 script -a cmds.log
+ajaysp24 3951495 3951493  0 19:56 pts/17   00:00:00 bash -i
+ajaysp24 3953864 3951495  0 20:03 pts/17   00:00:00 ps -ef
+ajaysp24 3953865 3951495  0 20:03 pts/17   00:00:00 grep ajaysp24
+
+Question 4:
+First output after executing 'vi file.txt' in the first terminal. 
+Command used: ps -ef | grep ajaysp24
+After executing the vi file.txt in the first terminal, it starts the vim process with file 'file.txt' The Process ID (PID) for the vim is 3954618.
+
+root	 3950479    3773  0 19:54 ?	   00:00:00 sshd: ajaysp24 [priv]
+ajaysp24 3950501       1  0 19:54 ?	   00:00:00 /usr/lib/systemd/systemd --user
+ajaysp24 3950503 3950501  0 19:54 ?	   00:00:00 (sd-pam)
+ajaysp24 3950509 3950479  0 19:54 ?	   00:00:00 sshd: ajaysp24@pts/8
+ajaysp24 3950510 3950509  0 19:54 pts/8	   00:00:00 -bash
+ajaysp24 3951493 3950510  0 19:56 pts/8	   00:00:00 script -a cmds.log
+ajaysp24 3951495 3951493  0 19:56 pts/17   00:00:00 bash -i
+root	 3954120    3773  0 20:04 ?	   00:00:00 sshd: ajaysp24 [priv]
+ajaysp24 3954147 3954120  0 20:04 ?	   00:00:00 sshd: ajaysp24@pts/28
+ajaysp24 3954148 3954147  0 20:04 pts/28   00:00:00 -bash
+ajaysp24 3954618 3954148  0 20:05 pts/28   00:00:00 vim file.txt
+ajaysp24 3954731 3951495  0 20:05 pts/17   00:00:00 ps -ef
+ajaysp24 3954732 3951495  0 20:05 pts/17   00:00:00 grep ajaysp24
+
+Second output after quitting vi editor using the exit option.
+Command used: ps -ef | grep ajaysp24
+After quitting the vi editor in the first terminal closes the vim process and removes it fromthe list of active processes.
+
+root	 3950479    3773  0 19:54 ?	   00:00:00 sshd: ajaysp24 [priv]
+ajaysp24 3950501       1  0 19:54 ?	   00:00:00 /usr/lib/systemd/systemd --user
+ajaysp24 3950503 3950501  0 19:54 ?	   00:00:00 (sd-pam)
+ajaysp24 3950509 3950479  0 19:54 ?	   00:00:00 sshd: ajaysp24@pts/8
+ajaysp24 3950510 3950509  0 19:54 pts/8	   00:00:00 -bash
+ajaysp24 3951493 3950510  0 19:56 pts/8	   00:00:00 script -a cmds.log
+ajaysp24 3951495 3951493  0 19:56 pts/17   00:00:00 bash -i
+root	 3954120    3773  0 20:04 ?	   00:00:00 sshd: ajaysp24 [priv]
+ajaysp24 3954147 3954120  0 20:04 ?	   00:00:00 sshd: ajaysp24@pts/28
+ajaysp24 3954148 3954147  0 20:04 pts/28   00:00:00 -bash
+ajaysp24 3954975 3951495  0 20:06 pts/17   00:00:00 ps -ef
+ajaysp24 3954976 3951495  0 20:06 pts/17   00:00:00 grep ajaysp24
+
+Question 5
+The init process is the first process to get started by the Kernel and has Process ID (PID):1Command Used: ps aux | grep systemd | head -1
+
+root	       1  0.6  0.0 178624 18432 ?	 Ss    2023 850:42 /usr/lib/systemd/systemd --switched-root --system --deserialize 18
+
+Question 6
+
+ps aux : This command is used to display information about the running processes. The option 'a' tells ps to display processes for all users, the option 'u' gives detailed user-oriented information including CPU and memory usage, Process ID (PID), Parent Process ID (PPID),  and the 'x' option includes processes not attached to the terminal.
+ 
+Script done on 2024-03-20 20:10:22-04:00
