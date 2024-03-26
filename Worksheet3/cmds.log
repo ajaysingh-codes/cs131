@@ -1,0 +1,9 @@
+Task 1
+1. cut -d, -f8, 16 Global\ YouTube\ Statistics.csv  > earnings.csv
+2. for country in "United States" "United Kingdom" "India"; do grep "$country" earnings.csv | sort -t, -k2 -nr | head -n 1 >> unsorted_top_earners.csv; done
+3. sort -t, -k2 -nr unsorted_top_earners.csv > ws3.txt
+
+Task 2
+1. cut -d, -f2,3,5 Global\ YouTube\ Statistics.csv > subscribers.csv
+2. for category in "Sports" "Education" "Entertainment"; do grep "$category" subscribers.csv | sort -t, -k2 -nr | head -n 1 > unsorted_top_subs.csv; done
+3.  sort -t, -k2 -nr unsorted_top_subs.csv >> ws3.txt
