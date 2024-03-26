@@ -1,12 +1,13 @@
-Task 1 Output: Shows the highest monthly earners from United States, India,
-and United Kingdom in sorted order (Country, Highest_monthly_earnings)
+Task 1: The output of Task 1 shows the highest monthly earners from United States,
+India, and the United Kingdom sorted based on column 2: highest_monthly_earnings
 
 United States,9200000
 India,9000000
 United Kingdom,2000000
 
-Task 2 Output: Shows the Title, Number of Subscribers, and Category of highest subscribed
-channel in three categories: Sports, Education, Entertainment 
+Task 2: The output of Task 2 shows the Title, Total number of Subscribers, and Category of
+highest subscribed channels in three different categories: Sports, Education, Entertainment,
+sorted based on column 2: # of Subscribers 
 
 MrBeast,166000000,Entertainment
 Cocomelon - Nursery Rhymes,162000000,Education
