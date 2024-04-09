@@ -14,11 +14,13 @@ drwxrwxr-x  8 ajaysp24 ajaysp24	  4096 Mar 26 00:33  .git
 drwxrwxr-x  7 ajaysp24 ajaysp24	  4096 Apr  8 22:15  cs131
 -rw-rw-r--  1 ajaysp24 ajaysp24	     0 Apr  8 22:17  ws4.txt
 drwx------  5 ajaysp24 S78	  4096 Apr  8 22:17  .
-bash-4.4$ vi .bash_profileK
+bash-4.4$ vi .bash_profile
 ?2004h?1049h22;0;0t?1h?2004h1;49r?12h?12l27m23m29mmH2J?25l49;1H".bash_profile" 2L, 39C1;1Halias l="ls -ltr"
 alias w="ls -l | wc"
 ?25l?2004l".bash_profile" 2L, 39C written							     4;1H~												 5;1H~												     6;1H~												 7;1H~												     8;1H~												 9;1H~												     10;1H~												  11;1H~											       12;1H~												    13;1H~												 14;1H~												      15;1H~												   16;1H~												17;1H~												     18;1H~												  19;1H~											       20;1H~												    21;1H~												 22;1H~												      23;1H~												   24;1H~												25;1H~												     26;1H~												  27;1H~											       28;1H~												    29;1H~												 30;1H~												      31;1H~												   32;1H~												33;1H~												     34;1H~												  35;1H~											       36;1H~												    37;1H~												 38;1H~												      39;1H~												   40;1H~												41;1H~												     42;1H~												  43;1H~											       44;1H~												    45;1H~												 46;1H~												      47;1H~												   48;1H~												1;1H?25h?25lm49;1HK49;1H:?2004h?25hwq
-?2004l?1l?25h?1049l23;0;0tbash-4.4$ source .bash_profile
+
+Task 1
+bash-4.4$ source .bash_profile
 bash-4.4$ l
 total 204
 -rw-rw-r-- 1 ajaysp24 ajaysp24 200279 Mar 25 22:30 'Global YouTube Statistics.csv'
@@ -26,39 +28,36 @@ drwxrwxr-x 7 ajaysp24 ajaysp24	 4096 Apr  8 22:15  cs131
 -rw-rw-r-- 1 ajaysp24 ajaysp24	 4096 Apr  8 22:18  ws4.txt
 bash-4.4$ w
       4	     31	    207
-bash-4.4$ cd csK131/
-bash-4.4$ mkdir K-p WorksheetK4/Subscribers
+
+Task 2
+bash-4.4$ cut -d',' -f3,8 Global\ YouTube\ Statistics.csv > list_of_countries.csv
+bash-4.4$ cd cs131/
+bash-4.4$ mkdir -p Worksheet4/Subscribers
 bash-4.4$ ls
 Assignment1  Assignment2  Worksheet2  Worksheet3  Worksheet4
 bash-4.4$ cd ..
 bash-4.4$ ls
- cs131	'Global YouTube Statistics.csv'	  ws4.txt
-ted_KStates.txt"United States" Global\ YouTube\ Statistics.csv | cut -d,K',' -f3 > Subscribers/Uni
-bash: Subscribers/United_States.txt: No such file or directory
-CCSubscribers/United_States.txtCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCcSubscribers/United_States.txtACCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCsSubscribers/United_States.txtACCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC1Subscribers/United_States.txtACCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC3Subscribers/United_States.txtACCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC1Subscribers/United_States.txtACCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC/Subscribers/United_States.txtACCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCWSubscribers/United_States.txtACCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCoSubscribers/United_States.txtACCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCrSubscribers/United_States.txtACCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCkSubscribers/United_States.txtACCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCsSubscribers/United_States.txtACCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCChSubscribers/United_States.txtACCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCeSubscribers/United_States.txtACCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCeSubscribers/United_States.txtACCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCtSubscribers/United_States.txt
-4/Subscribers/United_States.txtACCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCSubscribers/Unit17Ped_States.lsKA
-ACCCCCCCCCCCCCCCCCCCCCCCCCCCs"CGlobal\CYouTube\CStatistics.csvC|CcutC-d','C-f3C>Ccs131/Worksheet4/1PSubscribers/United_States.s"tGlobal\ YouTube\ Statistics.csv | cut -d',' -f3 > cs131/Worksheet4/S1Pubscribers/United_States.s"tGlobal\ YouTube\ Statistics.csv | cut -d',' -f3 > cs131/Worksheet4/Su1Pbscribers/United_States.s"tGlobal\ YouTube\ Statistics.csv | cut -d',' -f3 > cs131/Worksheet4/Sub1Pscribers/United_States.s"tGlobal\ YouTube\ Statistics.csv | cut -d',' -f3 > cs131/Worksheet4/Subs1Pcribers/United_States.s"tGlobal\ YouTube\ Statistics.csv | cut -d',' -f3 > cs131/Worksheet4/Subsc1Pribers/United_States.s"tGlobal\ YouTube\ Statistics.csv | cut -d',' -f3 > cs131/Worksheet4/Subscr1Pibers/United_States.t"tGlobal\ YouTube\ Statistics.csv | cut -d',' -f3 > cs131/Worksheet4/Subscri1Pbers/United_States.t"tGlobal\ YouTube\ Statistics.csv | cut -d',' -f3 > cs131/Worksheet4/Subscrib1Pers/United_States.t"tGlobal\ YouTube\ Statistics.csv | cut -d',' -f3 > cs131/Worksheet4/Subscribe1Prs/United_States.t"tGlobal\ YouTube\ Statistics.csv | cut -d',' -f3 > cs131/Worksheet4/Subscriber1Ps/United_States.t"tGlobal\ YouTube\ Statistics.csv | cut -d',' -f3 > cs131/Worksheet4/Subscribers1P/United_States.t"tGlobal\ YouTube\ Statistics.csv | cut -d',' -f3 > cs131/Worksheet4/Subscribers/1PUnited_States.txI" Global\ YouTube\ Statistics.csv | cut -d',' -f3 > cs131/Worksheet4/Subscribers/United_States.txn" Global\ YouTube\ Statistics.csv | cut -d',' -f3 > cs131/Worksheet4/Subscribers/United_States.txd" Global\ YouTube\ Statistics.csv | cut -d',' -f3 > cs131/Worksheet4/Subscribers/United_States.txi" Global\ YouTube\ Statistics.csv | cut -d',' -f3 > cs131/Worksheet4/Subscribers/United_States.txa" Global\ YouTube\ Statistics.csv | cut -d',' -f3 > cs131/Worksheet4/Subscribers/United_States.txCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCC1111111111111PIndiaCCCt
-bash-4.4$ cd cs131
-bash-4.4$ cd cs131/Worksheet4
-bash: cd: cs131/Worksheet4: No such file or directory
-bash-4.4$ cd cs13KWorksheet4/Subscribers/
+ cs131	'Global YouTube Statistics.csv'	  ws4.txt   list_of_countries.csv
+bash-4.4$ grep "United States" list_of_countries.csv | cut -d',' -f1 > cs131/Worksheet4/Subscibers/United_States.txt
+bash-4.4$ grep "India" list_of_countries.csv | cut -d',' -f1 > cs131/Worksheet4/Subscribers/India.txt
+bash-4.4$ cd cs131/Worksheet4/Subscribers/
 bash-4.4$ ls
 India.txt  United_States.txt
-bash-4.4$ usa_sum=$(awk 'K{s+=$1} END {print s}' United_States.txtK)
-bash-4.4$ usa_Kcount=$(wc -l K< United_States.txtK)
-bash-4.4$ usa_mean =K=$(echo "scale=2; $usa_sum / $usa_count" | bc)
-bash-4.4$ echo "United States: $usa_menKan" > mean_us.txt
-CCCCCCCCCClus111P1@i1@nCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC1111111111111PIndiaCCCCC
-CCCCCCCCCCCCCC1111P1@i1@nCCCCCCCCCCCCCCCCCCCCCCCCCCCCC11111111111111P.IndiaCCCC)
-CCCCCCCCCCus111P1@i1@nCCCCCCCCCCCCCCCCCCCCCCCCCC111P1@i1@nCCCCCCCCCC111P1@i1@nCCCCCCCCCCCC
-CCCCCCCCCC2Pechos"UnitedkState1111111111111P1@I1@n1@d1@i1@aCCCC11P1P1@i1@nCCCCCCCCCCCCCCC11PinCCCt
+bash-4.4$ usa_sum=$(awk '{s+=$1} END {print s}' United_States.txt)
+bash-4.4$ usa_count=$(wc -l < United_States.txt)
+bash-4.4$ usa_mean=$(echo "scale=2; $usa_sum / $usa_count" | bc)
+bash-4.4$ echo "United States: $usa_mean" > mean_us.txt
+bash-4.4$ in_sum+$(awk '{s+=$1} END {print s}' India.txt)
+bash-4.4$ in_count=$(wc -l < India.txt)
+bash-4.4$ in_mean=$(echo "scale=2; $usa_sum ? $usa_count" | bc)
+bash-4.4$ echo "India: $in_mean" > mean_in.txt
 bash-4.4$ paste mean_us.txt mean_in.txt > ws4_means.txt
-bash-4.4$ cat ws4_means.txtK
-United States: 23089735.09	India: 25596000.00
+bash-4.4$ cat ws4_means.txt
+United States: 23416932.90	India: 25658333.33
+
+Task 3
 bash-4.4$ touch greetings.txt
-bash-4.4$ vi greetings.txtK
-?25l?2004l"greetings.txt"05L,;95C?written27m23m29mmH2J?25l49;1H"greetings.txt" 0L, 0C2;1H1m34m~												      3;1H~												  4;1H~												      5;1H~												  6;1H~												      7;1H~												  8;1H~												      9;1H~												  10;1H~											       11;1H~												    12;1H~												 13;1H~												      14;1H~												   15;1H~												16;1H~												     17;1H~												  18;1H~											       19;1H~												    20;1H~												 21;1H~												      22;1H~												   23;1H~												24;1H~												     25;1H~												  26;1H~											       27;1H~												    28;1H~												 29;1H~												      30;1H~												   31;1H~												32;1H~												     33;1H~												  34;1H~											       35;1H~												    36;1H~												 37;1H~												      38;1H~												   39;1H~												40;1H~												     41;1H~												  42;1H~											       43;1H~												    44;1H~												 45;1H~												      46;1H~												   47;1H~												48;1H~												     1;1H?25h?25lm49;1H1m-- INSERT --m49;13HK1;1H?25h?25lH?25h?25le?25h?25ll?25h?25ll?25h?25lo?25h?25l,?25h?25l ?25h?25lJ?25h?25lo?25h?25lh?25h?25l ?25h?25?25h?25ln?25h?25l ?25h?25lD?25h?25lo?25h?25le?25h?25l!?25h?25l2;1HK2;1H?25h?25lH?25h?25li?25h?25l,?25h?25l ?25h?25lJ?25h?25la?25h?25lb?25h?25le?25h?25l ?25h?25lD?25h?25lo?25h?25le?25h?25l@?25h?25l2;13HK2;13H?25h?25l2;12HK2;12H?25h?25l2;11HK2;11H?25h?25l2;10HK2;10H?25h?25?25h?25l2;8HK2;8H?25h?25l2;7HK2;7H?25h?25l2;6HK2;6H?25h?25la?25h?25ln?25h?25le?25h?25l ?25h?25lD?25h?25li?25h?25le?25h?25l2;12HK2;12H?25h?25l2;11HK2;11H?25h?25lo?25h?25le?25h?25l!?25h?25l3;1HK3;1H?25h?25lG?25h?25lr?25h?25le?25h?25le?25h?25lt?25h?25li?25h?25ln?25h?25lg?25h?25ls?25h?25l,?25h?25l ?25h?25lJ?25h?25lo?25h?25lh?25h?25ln?25h?25l ?25h?25lS?25h?25lm?25h?25li?25h?25lt?25h?25lh?25h?25l!?25h?25l4;1HK4;1H?25h?25lH?25h?25le?25h?25ll?25h?25ll?25h?25lo?25h?25l,?25h?25l ?25h?25lM?25h?25li?25h?25lc?25h?25lh?25h?25la?25h?25le?25h?25ll?25h?25l ?25h?25lJ?25h?25lo?25h?25lh?25h?25ln?25h?25ls?25h?25lo?25h?25ln?25h?25l!?25h?25l5;1HK5;1H?25h?25lH?25h?25li?25h?25l,?25h?25l ?25h?25lE?25h?25lm?25h?25li?25h?25ll?25h?25ly?25h?25l ?25h?25lD?25h?25la?25h?25lv?25h?25li?25h?25ls?25h?25l!?25h?25l6;1HK6;1H?25h?25l1m34m~												   5;17H?25hm49;1HK5;16H?25l?25h?25l49;1H:?2004h?25hwq
+bash-4.4$ vi greetings.txt
 bash-4.4$ sed -i 's/Hello/Hi/g' greetings.txt
 bash-4.4$ sed -i '/Doe/d' greetings.txt
 bash-4.4$ cat greetings.txt
