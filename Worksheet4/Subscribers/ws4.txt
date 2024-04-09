@@ -35,7 +35,7 @@ Assignment1  Assignment2  Worksheet2  Worksheet3  Worksheet4
 bash-4.4$ cd ..
 bash-4.4$ ls
  cs131	'Global YouTube Statistics.csv'	  ws4.txt   list_of_countries.csv
-bash-4.4$ grep "United States" list_of_countries.csv | cut -d',' -f1 > cs131/Worksheet4/Subscibers/United_States.txt
+bash-4.4$ grep "United States" list_of_countries.csv | cut -d',' -f1 > cs131/Worksheet4/Subscribers/United_States.txt
 bash-4.4$ grep "India" list_of_countries.csv | cut -d',' -f1 > cs131/Worksheet4/Subscribers/India.txt
 bash-4.4$ cd cs131/Worksheet4/Subscribers/
 bash-4.4$ ls
