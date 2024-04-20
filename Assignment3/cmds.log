@@ -22,7 +22,7 @@ Task 4: Find all early birds (users logged in between 5am - 9am) from 'lastsp24.
   971  awk '{split ($6, a, ":"); hr = a[1]; if (hr >= 5 && hr <= 9) print $1}' lastsp24.fake | sort | uniq | awk 'BEGIN {print "Early Birds List:"}{print} END {print "Early Birds are dope. Please ensure you get enough sleep though."}'
 
 Task 5: Display users having a username that starts with 't' using awk and regex
-  972  awk '/^t/ {print}' lastsp24.fake
+  972  awk '/^t/ {print $1}' lastsp24.fake | sort | uniq 
 
 Task 6: Find all users with usernames starting with 'a' and UID divisible by 2
   978  awk -F':' '/^a/ && $3 % 2 == 0 {print $1}' passwd.fake

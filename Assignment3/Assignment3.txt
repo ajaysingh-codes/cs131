@@ -12,6 +12,8 @@ Output of Command:
 
 
 Task 2:
+Find all usernames logged in on a Sunday from 'lastsp24.fake' file.
+
 Command used to solve:
 grep 'Sun' lastsp24.fake | awk '{print $1}' | sort | uniq | awk 'BEGIN {print "The list of people who worked on Sunday are:"} {print} END {print "Kudos to these people for putting in the work"}'
 
@@ -32,6 +34,8 @@ xuebosp24
 Kudos to these people for putting in the work
 
 Task 3:
+Find all night owls (users logged in between 11pm - 4am), showing the distinct users.
+
 Command used to solve:
 awk '{split ($6, a, ":"); hr = a[1]; if ((hr >= 23 && hr <= 24) || (hr >= 0 && hr <= 4)) print $1}' lastsp24.fake | sort | uniq | awk 'BEGIN {print "Night Owls List:"} {print} END {print "Night Owls are dope. Please ensure you get enough sleep though."}'  
 
@@ -70,6 +74,7 @@ zakisp24
 Night Owls are dope. Please ensure you get enough sleep though.
 
 Task 4:
+Find Early birds (users logged in between 5am to 9am) using awk, sort, and uniq.
 
 Commands used to solve:
 awk '{split ($6, a, ":"); hr = a[1]; if (hr >= 5 && hr <= 9) print $1}' lastsp24.fake | sort | uniq | awk 'BEGIN {print "Early Birds List:"} {print} END {print "Early Birds are dope. Please ensure you get enough sleep though."}'
@@ -127,6 +132,7 @@ zakisp24
 Early Birds are dope. Please ensure you get enough sleep though.
 
 Task 5:
+Display all users having a username that starts with 't'. The first output shows the $0 (entire row) and the second output returns just the unique usernames.
 Commands used to solve:
 awk '/^t/ {print}' lastsp24.fake
 
@@ -169,7 +175,18 @@ tylermsp24 pts/17       172.29.96.1      Tue Mar 26 16:22 - 19:37  (03:15)
 tylersp24 pts/10       172.29.97.254    Tue Mar 26 16:21 - 18:26  (02:04)
 tylersp24 pts/29       172.29.97.222    Thu Mar 21 16:32 - 17:40  (01:07)
 
+Command used to display unique usernames starting with 't':
+awk '/^t/ {print $1}' lastsp24.fake | sort | uniq
+
+Output of Command:
+taliasp24
+tanishasp24
+tylermsp24
+tylersp24
+ 
 Task 6:
+Find all users starting with 'a' and have UID divisible by 2
+
 Commands used to solve:
 awk -F':' '/^a/ && $3 % 2 == 0 {print $1}' passwd.fake
 
@@ -190,6 +207,7 @@ ashish
 amansp24
 
 Task 7:
+Display all distinct lines left after removing all letters, digits, and spaces.
 Commands used to solve:
 sed 's/[a-zA-Z0-9 ]//g' passwd.fake | sort -u
 
@@ -204,3 +222,7 @@ Output of Command:
 :::::///__/://
 ::::://://
 :::::/://
+taliasp24
+tanishasp24
+tylermsp24
+tylersp24
