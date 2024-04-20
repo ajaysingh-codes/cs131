@@ -1,0 +1,31 @@
+  
+Assignment 3
+
+944  wget https://raw.githubusercontent.com/jyotikahp/DemoRepoForCS131/main/passwd.fake
+
+Task 1: Filter and redirect to file 'lastsp24.fake' to only include users with str 'sp24' from file 'last.fake'. Displays the total number of lines before and after filtering.
+  
+  947  man last
+  948  head -5 last.fake  
+  949  wc -l last.fake
+  950  grep "sp24" last.fake > lastsp24.fake
+  951  wc -l lastsp24.fake
+  952  head -5 lastsp24.fake
+
+Task 2: Find all usernames logged in on Sunday from 'lastsp24.fake' file 
+  961  grep 'Sun' lastsp24.fake | awk '{print $1}' | sort | uniq | awk 'BEGIN {print "The list of people who worked on Sunday are:"} {print} END {print "Kudos to these people for putting in the work"}'
+
+Task 3: Find all night owls (users logged in between 11pm - 4pm) from 'lastsp24.fake' file
+  970  awk '{split ($6, a, ":"); hr = a[1]; if ((hr >= 23 && hr <= 24) || (hr >= 0 && hr <= 4)) print $1}' lastsp24.fake | sort | uniq | awk 'BEGIN {print "Night Owls List:"}{print} END {print "Night Owls are dope. Please ensure you get enough sleep though."}'
+
+Task 4: Find all early birds (users logged in between 5am - 9am) from 'lastsp24.fake' file
+  971  awk '{split ($6, a, ":"); hr = a[1]; if (hr >= 5 && hr <= 9) print $1}' lastsp24.fake | sort | uniq | awk 'BEGIN {print "Early Birds List:"}{print} END {print "Early Birds are dope. Please ensure you get enough sleep though."}'
+
+Task 5: Display users having a username that starts with 't' using awk and regex
+  972  awk '/^t/ {print}' lastsp24.fake
+
+Task 6: Find all users with usernames starting with 'a' and UID divisible by 2
+  978  awk -F':' '/^a/ && $3 % 2 == 0 {print $1}' passwd.fake
+  
+Task 7: Use sed on file 'passwd.fake' to display distinct files after deleting all letters, digits and spaces.
+  994  sed 's/[a-zA-Z0-9 ]//g' passwd.fake | sort -u

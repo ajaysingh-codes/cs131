@@ -1,0 +1,206 @@
+Commands Used for each task with their outputs:
+
+Task 1:
+Command(s) used to solve: 
+wc -l last.fake
+grep "sp24" last.fake > lastsp24.fake
+wc -l lastsp24.fake
+
+Output of Command:
+507 last.fake
+478 lastsp24.fake
+
+
+Task 2:
+Command used to solve:
+grep 'Sun' lastsp24.fake | awk '{print $1}' | sort | uniq | awk 'BEGIN {print "The list of people who worked on Sunday are:"} {print} END {print "Kudos to these people for putting in the work"}'
+
+Output of Command:
+The list of people who worked on Sunday are:
+aayushsp24
+akashsp24
+billysp24
+breannasp24
+briansp24
+chih-kuosp24
+fnusp24
+gavinsp24
+megansp24
+michellesp24
+swansp24
+xuebosp24
+Kudos to these people for putting in the work
+
+Task 3:
+Command used to solve:
+awk '{split ($6, a, ":"); hr = a[1]; if ((hr >= 23 && hr <= 24) || (hr >= 0 && hr <= 4)) print $1}' lastsp24.fake | sort | uniq | awk 'BEGIN {print "Night Owls List:"} {print} END {print "Night Owls are dope. Please ensure you get enough sleep though."}'  
+
+Output of Command:
+Night Owls List:
+aarushisp24
+aayushsp24
+ajaysp24
+akashsp24
+athishsp24
+atishaysp24
+ayesp24
+billysp24
+breannasp24
+briansp24
+chih-kuosp24
+daosp24
+ericsp24
+fnusp24
+gavinsp24
+gradysp24
+gursimransp24
+jadonsp24
+justinsp24
+manassp24
+matthewsp24
+megansp24
+rickysp24
+ronsp24
+sheelsp24
+sunidhisp24
+tylermsp24
+xiaokesp24
+xuebosp24
+zakisp24
+Night Owls are dope. Please ensure you get enough sleep though.
+
+Task 4:
+
+Commands used to solve:
+awk '{split ($6, a, ":"); hr = a[1]; if (hr >= 5 && hr <= 9) print $1}' lastsp24.fake | sort | uniq | awk 'BEGIN {print "Early Birds List:"} {print} END {print "Early Birds are dope. Please ensure you get enough sleep though."}'
+
+Output of Command:
+Early Birds List:
+aarushisp24
+aayushsp24
+ajaysp24
+alexsp24
+athishsp24
+ayesp24
+benjaminsp24
+bennysp24
+billysp24
+breannasp24
+chih-kuosp24
+connersp24
+daosp24
+davidsp24
+dylansp24
+ericsp24
+farihasp24
+fnusp24
+gavinsp24
+georgesp24
+gradysp24
+gursimransp24
+jadonsp24
+jaydevsp24
+jessesp24
+jonathansp24
+justinsp24
+kevinsp24
+kobesp24
+madhavsp24
+manassp24
+matthewsp24
+michellesp24
+nicholsonsp24
+piercesp24
+rickysp24
+ronsp24
+sangsp24
+sheelsp24
+sunidhisp24
+swansp24
+taliasp24
+tylermsp24
+tylersp24
+vaikuntamsp24
+xiaokesp24
+xuebosp24
+zakisp24
+Early Birds are dope. Please ensure you get enough sleep though.
+
+Task 5:
+Commands used to solve:
+awk '/^t/ {print}' lastsp24.fake
+
+Output of Command:
+tylersp24 pts/10       172.29.96.22     Tue Apr  9 22:35   still logged in
+tylersp24 pts/10                        Tue Apr  9 22:22 - 22:22  (00:00)
+tylersp24 pts/10                        Tue Apr  9 22:21 - 22:22  (00:00)
+tylersp24 pts/1                         Tue Apr  9 21:47 - 21:50  (00:03)
+tylersp24 pts/27       172.29.96.22     Tue Apr  9 21:46 - 22:35  (00:48)
+tylersp24 pts/37       172.29.96.107    Tue Apr  9 16:32 - 17:32  (01:00)
+tylersp24 pts/37       172.29.96.107    Tue Apr  9 16:31 - 16:32  (00:00)
+tylermsp24 pts/27       172.29.96.106    Tue Apr  9 16:21 - 19:46  (03:24)
+tylermsp24 pts/42       172.29.96.22     Mon Apr  8 22:18 - 00:39  (02:20)
+tylermsp24 pts/42                        Mon Apr  8 21:47 - 21:52  (00:05)
+tylermsp24 pts/38                        Mon Apr  8 20:57 - 21:31  (00:33)
+tylermsp24 pts/28       172.29.96.19     Mon Apr  8 20:41 - 22:06  (01:24)
+tylermsp24 pts/8                         Mon Apr  8 00:46 - 01:08  (00:22)
+tylermsp24 pts/8                         Mon Apr  8 00:44 - 00:45  (00:00)
+tylermsp24 pts/4        172.29.96.97     Mon Apr  8 00:44 - 03:10  (02:26)
+taliasp24 pts/1                         Sat Apr  6 19:16 - 19:37  (00:20)
+taliasp24 pts/1                         Sat Apr  6 19:16 - 19:16  (00:00)
+taliasp24 pts/1                         Sat Apr  6 19:14 - 19:14  (00:00)
+taliasp24 pts/1                         Sat Apr  6 19:02 - 19:02  (00:00)
+taliasp24 pts/1                         Sat Apr  6 18:56 - 18:56  (00:00)
+taliasp24 pts/10                        Sat Apr  6 17:43 - 18:50  (01:07)
+taliasp24 pts/8        172.29.96.86     Sat Apr  6 17:42 - 23:57  (06:14)
+taliasp24 pts/4                         Sat Apr  6 16:24 - 19:24  (02:59)
+taliasp24 pts/4                         Sat Apr  6 16:17 - 16:18  (00:00)
+taliasp24 pts/1        172.29.96.86     Sat Apr  6 16:16 - 18:38  (02:21)
+tylersp24 pts/32       172.29.96.67     Thu Mar 28 16:44 - 17:47  (01:02)
+tylermsp24 pts/4        172.29.96.63     Thu Mar 28 16:43 - 18:46  (02:02)
+tylermsp24 pts/36       172.29.96.37     Wed Mar 27 02:43 - 04:49  (02:05)
+tylermsp24 pts/28       172.29.96.44     Wed Mar 27 01:43 - 04:43  (02:59)
+tylersp24 pts/28       172.29.96.37     Wed Mar 27 00:41 - 00:49  (00:07)
+tanishasp24 pts/17       172.29.96.39     Wed Mar 27 00:35 - 05:48  (05:12)
+tylersp24 pts/34       172.29.96.40     Wed Mar 27 00:28 - 00:55  (00:27)
+tylersp24 pts/1        172.29.96.37     Wed Mar 27 00:18 - 00:42  (00:23)
+tylersp24 pts/28       172.29.96.40     Tue Mar 26 22:06 - 00:31  (02:24)
+tylermsp24 pts/17       172.29.96.1      Tue Mar 26 16:22 - 19:37  (03:15)
+tylersp24 pts/10       172.29.97.254    Tue Mar 26 16:21 - 18:26  (02:04)
+tylersp24 pts/29       172.29.97.222    Thu Mar 21 16:32 - 17:40  (01:07)
+
+Task 6:
+Commands used to solve:
+awk -F':' '/^a/ && $3 % 2 == 0 {print $1}' passwd.fake
+
+Output of Command:
+angie23fa
+areebah23fa
+apple23fa
+ajay23fa
+alan23fa
+amreenf23
+acesp24
+akashsp24
+ayesp24
+alexsp24
+aayushsp24
+ajaysp24
+ashish
+amansp24
+
+Task 7:
+Commands used to solve:
+sed 's/[a-zA-Z0-9 ]//g' passwd.fake | sort -u
+
+Output of Command:
+-::::-:/://
+-:::::///-://
+-:::::///__/-://
+-:::::/://
+::::-:///://
+:::::///://
+:::::///_/://
+:::::///__/://
+::::://://
+:::::/://
