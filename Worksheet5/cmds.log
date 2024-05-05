@@ -1,5 +1,16 @@
-Total record counts in each file: 
-Music: 73
-Entertainment: 68
-Gaming: 26
-Comedy: 22
+   
+# Creating a shell script and giving execute rights using chmod 
+   13  touch script.sh
+   14  chmod +x script.sh
+   15  vi script.sh
+   16  cd ..
+   17  cd cs131
+   18  ls
+
+# Execute the script with YouTubers dataset file as argument and redirect the number of 
+records in each file to ws5.txt file
+   19  ./script.sh ../Global\ YouTube\ Statistics.csv
+   20  ls
+   21  cat ws5.txt
+   22  history > cmds.log
+
